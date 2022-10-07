@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-form-field appearence = "fill">
+    <mat-label> Ingrese nombre </mat-label>
+    <input matInput placeholder="Charmander" [(ngModel)] = "name" (input)="buscar()"> 
+  </mat-form-field>
+
+  <p>El pokemon es: {{ name }}</p>
+  <img src="{{ urlImage }}">
+</div>
